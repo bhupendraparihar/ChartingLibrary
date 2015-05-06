@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/chart.css">
+</head>
+<body>
+	<div id="myDiv"></div>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/chart.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var chartCfg = {
+			name: ['Orange', 'Apple', 'Mango', 'Banana','Cherry'], 
+			data: [100, 200, 150, 10, 70],
+			xLable: 'Fruits',
+			yLable : 'Pounds of Fruits'
+		};
+		var C = new Chart(chartCfg);
+		C.render('myDiv');
+	});
+</script>
+
+<script id="chartWrapTemplate" type="text/template">
+	<div class="chartWrap">
+		<div class="chart">
+			<div class="yBarUnits"></div>
+		</div>
+		<div class="xLable"></div>
+		<div class="yLable"></div>
+	</div>
+</script>
+<script id="barTemplate" type="text/template">
+	<div class="bar"><div class="barName"></div></div>
+</script>
+</body>
+</html>

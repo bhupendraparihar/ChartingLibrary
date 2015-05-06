@@ -1,0 +1,49 @@
+.chartWrap{
+	background-color:#CCC;
+	position:relative;
+	height:400px;
+}
+
+.chart{
+	height:300px;
+	padding-top:20px;
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	margin-left:70px;
+	position:relative;
+}
+
+.xLable{
+	line-height:80px;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+}
+
+.yLable{
+	line-height:30px;
+	height:100%;
+	margin:-340px 0 0 -20px;
+	text-align:center;
+	transform:rotate(270deg);
+}
+
+.bar{
+	width:50px;
+	background-color:#00F;
+	margin:0 10px 0 10px;
+	position:relative;
+	display:inline-block;
+}
+
+.barName{
+	position:absolute;
+	bottom:-20px;
+}
+
+.yBarUnits{
+	position:absolute;
+	bottom:0px;
+	left:-30px;
+}
